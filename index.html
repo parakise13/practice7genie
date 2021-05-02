@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/13dea5f8fa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="topNav">
+            <ul class="money">
+                <li><button class="purchase"><i class="fas fa-ticket-alt"></i>이용권 구매</button></li>
+                <li><button>상품권 등록</button></li>
+                <li><button>캐시충전</button></li>
+            </ul>
+            <ul class="player">
+                <li><button class="webplayer">웹플레이어</button></li>
+                <li><button>PC플레이어</button></li>
+                <li><button>지니앱</button></li>
+            </ul>
+    </nav>
+    
+    <header class="logo">
+        <img class="logo" src="image/logo.PNG" alt=""></div>
+        <input class="search" type="text" placeholder="주말 오후, 뒹굴거리며 듣고 싶은 음악">
+        <i class="fas fa-search"></i>
+    </header>
+
+    <nav class="secNav">
+        <ul class="menu">
+            <li><button>지니차트</button></li>
+            <li><button>최신음악</button></li>
+            <li><button>장르음악</button></li>
+            <li><button>지니TV</button></li>
+            <li><button>추천</button></li>
+            <li><button>매거진</button></li>
+            <li><button>뮤직허그</button></li>
+        </ul>
+        <ul class="signIn">
+            <li><button>로그인/회원가입<i class="fas fa-chevron-down"></i></button></li>
+        </ul>
+    </nav>
+
+    <section class="albumList">
+        <div class="listMenu">
+            <ul>
+                <li class="big"><button>최신음악</button></li>
+                <li><button>종합</button></li>
+                <li><button>국내</button></li>
+                <li><button>국외</button></li>
+            </ul>
+            <ul>
+                <li>1 / 5</li>
+                <li><button><i class="far fa-arrow-alt-circle-left"></i></button></li>
+                <li><button><i class="far fa-arrow-alt-circle-right"></i></button></li>
+            </ul>
+        </div>
+        <div class="albumImg">
+            <div class="first">
+                <img src="image/album1.PNG" alt="">
+                <img src="image/album2.PNG" alt="">
+                <img src="image/album3.PNG" alt="">
+                <img src="image/album4.PNG" alt="">
+                <img src="image/album5.PNG" alt="">
+                <img src="image/album6.PNG" alt="">
+            </div>
+            <div class="second">
+                <img src="image/album7.PNG" alt="">
+                <img src="image/album8.PNG" alt="">
+                <img src="image/album9.PNG" alt="">
+                <img src="image/album10.PNG" alt="">
+                <img src="image/album11.PNG" alt="">
+                <img src="image/album12.PNG" alt="">
+            </div>
+        </div>
+    </section>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/ad1.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/ad2.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/ad3.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/ad4.PNG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <section class="tableAndSide">
+          <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">실시간 차트</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th class="currentDate" scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>롤린(Rollin')</td>
+                    <td>브레이브걸스</td>
+                    <td> 
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Peaches (Feat. Daniel Caesar & Giveon)</td>
+                    <td>Justin Bieber</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Timeless</td>
+                    <td>SG워너비</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>라일락</td>
+                    <td>아이유 (IU)</td>
+                    <td>
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>운전만해 (We Ride)</td>
+                    <td>브레이브걸스</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>춤춰 (Ugly Dance)</td>
+                    <td>온앤오프 (ONF)</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Celebrity</td>
+                    <td>아이유 (IU)</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>라라라</td>
+                    <td>SG워너비</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>마.피.아 In The Morning</td>
+                    <td>ITZY (있지)</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>너의 발걸음에 빛을 비춰줄게</td>
+                    <td>케이시 (Kassy)</td>
+                    <td>                        
+                        <ul>
+                            <li><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-plus-circle"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul>
+                    </td>
+                  </tr>
+                </tbody>
+                <tr>
+                    <th scope="col"><button>전체듣기</button><button>전체추가</button></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">TOP200바로가기<i class="fas fa-chevron-right"></i></th>
+                  </tr>
+          </table>
+          <div class="side">
+              <span>HOT & NEW</span>
+              <img src="image/side1.PNG" alt="">
+              <img src="image/side2.PNG" alt="">
+          </div>
+
+        </section>
+
+</body>
+</html>
