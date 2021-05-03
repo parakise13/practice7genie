@@ -26,8 +26,11 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
   height: 100%;
-  width: 1500px;
-  text-align: center;
+  min-width: 940px;
+}
+
+.box {
+  width: 940px;
 }
 
 ul {
@@ -49,18 +52,17 @@ button {
 
 .topNav .money {
   padding: 0;
+  margin-left: 0;
   display: flex;
-  align-items: center;
 }
 
 .topNav .money li {
   padding: calc(var(--padding) / 2);
-  text-align: center;
 }
 
 .topNav .money .purchase {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
   font-weight: 900;
 }
 
@@ -73,7 +75,147 @@ button {
 .topNav .player {
   padding: 0;
   display: flex;
+  margin-right: 0;
 }
 .topNav .player li {
   padding: calc(var(--padding) / 2);
+}
+.topNav .player .webplayer {
+  color: var(--blue-color);
+  font-weight: 900;
+}
+
+.logo {
+  position: relative;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.logo .logoimg {
+  padding-right: var(--padding);
+}
+
+.logo .search {
+  border: none;
+  border-bottom: 2px solid var(--blue-color);
+  width: 350px;
+  height: 40px;
+}
+
+.logo i {
+  font-size: 20px;
+  color: var(--blue-color);
+  position: absolute;
+  top: 18px;
+  left: 450px;
+}
+
+.secNav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey-dark-color);
+}
+
+.secNav .menu {
+  display: flex;
+  margin-left: 0;
+  padding: 0;
+}
+
+.secNav .menu li {
+  padding-right: calc(var(--padding) * 2);
+}
+
+.secNav .menu button {
+  font-size: 20px;
+  font-weight: 900;
+}
+.secNav .signIn {
+  margin-right: 0;
+  font-size: 14px;
+}
+.secNav .signIn li {
+  position: relative;
+  top: 8px;
+}
+
+.secNav .signIn i {
+  padding-left: 10px;
+}
+
+.albumList .listMenu {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.albumList .listMenu .region {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0;
+  padding: 0;
+}
+
+.albumList .listMenu .region li {
+  padding-right: calc(var(--padding) * 2);
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+}
+
+.albumList .listMenu .region .big button {
+  font-size: 18px;
+  font-weight: 900;
+}
+.albumList .listMenu .region .blue button {
+  color: var(--blue-color);
+  font-weight: 900;
+}
+
+.albumList .listMenu .page {
+  display: flex;
+  margin-right: 0;
+}
+
+.albumList .listMenu .page li {
+  padding-left: var(--padding);
+}
+
+.albumList .listMenu .page i {
+  font-size: 20px;
+}
+
+.albumList .albumImg .first {
+  display: flex;
+  justify-content: space-around;
+  margin: 6px 0;
+}
+
+.albumList .albumImg .second {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 25px 0;
+}
+
+.tableAndSide {
+  display: flex;
+  margin-top: calc(var(--padding) * 3);
+}
+
+.tableAndSide .table.table-hover ul {
+  display: flex;
+}
+.tableAndSide .table.table-hover ul li {
+  font-size: 20px;
+}
+
+.tableAndSide .side {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--padding);
+}
+
+.tableAndSide .side span {
+  font-size: var(--font-large);
+  font-weight: 900;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
